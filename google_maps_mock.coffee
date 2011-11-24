@@ -10,7 +10,11 @@ class google.maps.LatLng
   lng: -> @longitude
 
 class google.maps.LatLngBounds
+  constructor: (@ne, @sw) ->
 
+  getSouthWest: -> @sw
+  getNorthEast: -> @ne
+  
 class google.maps.OverlayView
   
 class google.maps.Marker
