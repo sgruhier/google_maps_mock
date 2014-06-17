@@ -18,6 +18,32 @@ class google.maps.LatLngBounds
 class google.maps.OverlayView
 
 class google.maps.Marker
+  getAnimation: ->
+  getClickable: ->
+  getCursor: ->
+  getDraggable: ->
+  getFlat: ->
+  getIcon: ->
+  getPosition: ->
+  getShadow: ->
+  getShape: ->
+  getTitle: ->
+  getVisible: ->
+  getZIndex: ->
+  setAnimation: ->
+  setClickable: ->
+  setCursor: ->
+  setDraggable: ->
+  setFlat: ->
+  setIcon: ->
+  setPosition: ->
+  setShadow: ->
+  setShape: ->
+  setTitle: ->
+  setVisible: ->
+  setZIndex: ->
+  setMap: ->
+  getMap: ->
 
 class google.maps.MarkerImage
 
