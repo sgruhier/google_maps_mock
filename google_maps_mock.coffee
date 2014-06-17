@@ -1,5 +1,17 @@
 @google =
-  maps: {}
+  maps:
+    event:
+      addDomListener: ->
+      addDomListenerOnce: ->
+      addListener: ->
+      addListenerOnce: ->
+      bind: ->
+      clearInstanceListeners: ->
+      clearListeners: ->
+      forward: ->
+      removeListener: ->
+      trigger: ->
+      vf: ->
 
 class google.maps.LatLng
   constructor: (lat, lng) ->
