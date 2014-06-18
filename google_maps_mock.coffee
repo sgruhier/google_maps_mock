@@ -13,7 +13,11 @@
       trigger: ->
       vf: ->
 
-class google.maps.LatLng
+class GoogleMapsMock
+  setMap: ->
+  getMap: ->
+
+class google.maps.LatLng extends GoogleMapsMock
   constructor: (lat, lng) ->
     @latitude  = parseFloat(lat)
     @longitude = parseFloat(lng)
@@ -21,15 +25,15 @@ class google.maps.LatLng
   lat: -> @latitude
   lng: -> @longitude
 
-class google.maps.LatLngBounds
+class google.maps.LatLngBounds extends GoogleMapsMock
   constructor: (@ne, @sw) ->
 
   getSouthWest: -> @sw
   getNorthEast: -> @ne
 
-class google.maps.OverlayView
+class google.maps.OverlayView extends GoogleMapsMock
 
-class google.maps.Marker
+class google.maps.Marker extends GoogleMapsMock
   getAnimation: ->
   getClickable: ->
   getCursor: ->
@@ -57,12 +61,12 @@ class google.maps.Marker
   setMap: ->
   getMap: ->
 
-class google.maps.MarkerImage
+class google.maps.MarkerImage extends GoogleMapsMock
 
-class google.maps.Map
+class google.maps.Map extends GoogleMapsMock
 
-class google.maps.Point
+class google.maps.Point extends GoogleMapsMock
 
-class google.maps.Size
+class google.maps.Size extends GoogleMapsMock
 
-class google.maps.InfoWindow
+class google.maps.InfoWindow extends GoogleMapsMock
