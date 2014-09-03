@@ -64,6 +64,7 @@ class google.maps.Marker extends GoogleMapsMock
 class google.maps.MarkerImage extends GoogleMapsMock
 
 class google.maps.Map extends GoogleMapsMock
+  setCenter: ->
 
 class google.maps.Point extends GoogleMapsMock
 
